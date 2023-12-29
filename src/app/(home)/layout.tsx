@@ -1,5 +1,5 @@
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
-  return <section>{children}</section>;
-};
+  return <section>{children}</section>
+}
 
-export default HomeLayout;
+export default HomeLayout
