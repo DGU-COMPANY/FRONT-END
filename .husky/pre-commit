@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 # Add --no-verify to your git commit command to skip the pre-commit hook.
-npm run format
+npm run check-format
 npm run lint
 npm run test
