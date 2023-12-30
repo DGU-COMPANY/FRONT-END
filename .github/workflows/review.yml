@@ -33,7 +33,7 @@ jobs:
         run: mkdir -p reports
 
       - name: Run Tests and Capture Output
-        run: npx jest --config=jest.config.ts
+        run: npx jest --config=jest.config.js
 
       - name: Publish Test Results
         uses: EnricoMi/publish-unit-test-result-action/composite@v2
