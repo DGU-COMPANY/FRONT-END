@@ -1,0 +1,38 @@
+name: REVIEW CODE EXTENSION PROJECT
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  issues: read
+  checks: write
+  pull-requests: write
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Add .env file
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Create Reports Directory
+        run: mkdir -p reports
+
+      - name: Run Tests and Capture Output
+        run: npx jest --config=jest.config.js
+
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action/composite@v2
+        if: always()
+        with:
+          comment_mode: always
+          files: |
+            reports/jest-junit.xml
