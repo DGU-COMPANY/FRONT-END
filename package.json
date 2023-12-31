@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.15.0",
+    "@tanstack/react-query-devtools": "^5.15.5",
     "axios": "^1.6.3",
     "clsx": "^2.0.0",
+    "eslint-plugin-prettier": "^5.1.2",
     "next": "14.0.4",
     "next-auth": "^4.24.5",
     "react": "^18",
