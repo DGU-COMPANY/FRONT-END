@@ -7,6 +7,12 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 
+permissions:
+  contents: read
+  issues: read
+  checks: write
+  pull-requests: write
+
 jobs:
   test-and-sonarcloud:
     name: Run Tests and SonarCloud Scan
@@ -28,6 +34,15 @@ jobs:
 
       - name: Run Tests
         run: npm test
+
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: always()
+        with:
+          files: |
+            test-results/**/*.xml
+            test-results/**/*.trx
+            test-results/**/*.json
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
