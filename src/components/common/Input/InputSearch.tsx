@@ -24,8 +24,8 @@ const InputSearch = ({ className }: IInputSearchProps) => {
           className="w-full rounded-xl outline-none bg-transparent py-2.5 hidden md:block"
         />
       </div>
-      <Button className="px-3 md:hidden">
-        <BsSearch fontSize="24px" />
+      <Button className="px-2 md:hidden">
+        <BsSearch fontSize="20px" />
       </Button>
     </>
   )

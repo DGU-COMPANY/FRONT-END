@@ -11,7 +11,7 @@ import { SwitchTypeVideo } from '@/components/common/Switch'
 
 const Header = () => {
   return (
-    <header className="bg-header md:bg-none md:bg-white pl-5 pr-1 py-3 md:rounded-layout w-full">
+    <header className="bg-header md:bg-none md:bg-white px-5 md:pl-5 md:pr-1 py-3 md:rounded-layout w-full">
       <div className="flex items-center justify-between gap-x-4">
         <Logo className="inline-block md:hidden px-2" />
         <SwitchTypeVideo />
