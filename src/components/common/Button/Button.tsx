@@ -3,7 +3,6 @@ import { AiOutlineLoading3Quarters } from 'react-icons/ai'
 
 interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isOutline?: boolean
-  isIcon?: boolean
   isDisable?: boolean
   isPrimary?: boolean
   isRound?: boolean
@@ -17,7 +16,6 @@ interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = ({
   isOutline,
-  isIcon,
   isDisable,
   isPrimary,
   isRound,
@@ -31,14 +29,14 @@ const Button = ({
 }: IButtonProps) => {
   const renderClassName = cn(
     'text-center transition-all hover:hover:opacity-80 px-4 py-2 rounded',
-    className,
     {
       'border border-solid border-black': isOutline,
-      'flex justify-center items-center': isIcon ?? isLoading,
+      'flex justify-center items-center': isLoading ?? leftIcon ?? rightIcon,
       'opacity-40': isDisable,
-      'text-gray-700 bg-primary': isPrimary,
+      'text-charcoalGray bg-primary': isPrimary,
       'round-xl': isRound,
     },
+    className,
   )
 
   return (

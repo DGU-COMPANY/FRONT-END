@@ -10,9 +10,34 @@ const config: Config = {
     extend: {
       colors: {
         primary: '#7FCFFC',
-        gray: {
-          700: '#2C2C2C',
-        },
+        lightGray: '#DBDBDB',
+        charcoalGray: '#2C2C2C',
+        steelGray: '#7b7b7b ',
+        inkBlue: '#161823',
+        whisperGray: '#F6F6F6 ',
+        mediumGray: '#7A7A7A ',
+      },
+      backgroundImage: {
+        header: 'linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0))',
+      },
+      spacing: {
+        1.25: '5px',
+        6.5: '26px',
+        15: '60px',
+      },
+      width: {
+        12.5: '50px',
+      },
+      borderRadius: {
+        layout: '5px',
+        2.5: '10px',
+        5: '20px',
+      },
+      fontSize: {
+        5.5: '22px',
+      },
+      boxShadow: {
+        top: '0 -4px 6px -1px rgba(0, 0, 0, 0.05), 0 -2px 4px -1px rgba(0, 0, 0, 0.03)',
       },
     },
   },
