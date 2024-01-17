@@ -1,6 +1,7 @@
 import { BsSearch } from 'react-icons/bs'
 import { Button } from '../Button'
 import { cn } from '@/utils'
+import Input from './Input'
 
 interface IInputSearchProps {
   className?: string
@@ -18,11 +19,7 @@ const InputSearch = ({ className }: IInputSearchProps) => {
         <Button className="px-3">
           <BsSearch />
         </Button>
-        <input
-          type="text"
-          placeholder="Search"
-          className="w-full rounded-xl outline-none bg-transparent py-2.5 hidden md:block"
-        />
+        <Input placeholder="Search" className="w-full hidden md:block px-0" />
       </div>
       <Button className="px-2 md:hidden">
         <BsSearch fontSize="20px" />
