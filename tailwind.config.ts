@@ -22,6 +22,7 @@ const config: Config = {
         iridium: '#3D3D3D',
         cottonSeed: '#C5BCBC',
         monsoon: '#888585',
+        artyClickOceanGreen: '#00FF85',
       },
       backgroundImage: {
         header: 'linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0))',

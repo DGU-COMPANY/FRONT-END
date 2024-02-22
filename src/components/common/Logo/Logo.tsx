@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import logo from '@/assets/logo.png'
+import logoDark from '@/assets/logo/logoDark.png'
 import Image from 'next/image'
 import { cn } from '@/utils'
 
@@ -16,7 +16,11 @@ const Logo = ({ className }: ILogoProps) => {
       )}
       href="/"
     >
-      <Image className="w-10 xl:w-12.5 object-cover" src={logo} alt="logo" />
+      <Image
+        className="w-10 xl:w-12.5 object-cover"
+        src={logoDark}
+        alt="logo"
+      />
     </Link>
   )
 }
