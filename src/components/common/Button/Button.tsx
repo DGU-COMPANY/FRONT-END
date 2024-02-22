@@ -5,7 +5,6 @@ interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isOutline?: boolean
   isDisable?: boolean
   isPrimary?: boolean
-  isRound?: boolean
   isLoading?: boolean
   leftIcon?: React.ReactNode
   rightIcon?: React.ReactNode
@@ -18,7 +17,6 @@ const Button = ({
   isOutline,
   isDisable,
   isPrimary,
-  isRound,
   isLoading,
   leftIcon,
   rightIcon,
@@ -34,7 +32,6 @@ const Button = ({
       'flex justify-center items-center': isLoading ?? leftIcon ?? rightIcon,
       'opacity-40': isDisable,
       'text-charcoalGray bg-primary': isPrimary,
-      'round-xl': isRound,
     },
     className,
   )

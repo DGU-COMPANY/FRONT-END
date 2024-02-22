@@ -11,11 +11,17 @@ const config: Config = {
       colors: {
         primary: '#7FCFFC',
         lightGray: '#DBDBDB',
+        error: '#DC2626',
         charcoalGray: '#2C2C2C',
         steelGray: '#7b7b7b ',
         inkBlue: '#161823',
         whisperGray: '#F6F6F6 ',
         mediumGray: '#7A7A7A ',
+        rangoonGreen: '#1C1C1C',
+        silverChalice: '#ADADAD',
+        iridium: '#3D3D3D',
+        cottonSeed: '#C5BCBC',
+        monsoon: '#888585',
       },
       backgroundImage: {
         header: 'linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0))',
