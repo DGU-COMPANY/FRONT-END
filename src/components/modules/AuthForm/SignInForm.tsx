@@ -13,8 +13,8 @@ const SignInForm = () => {
       data-aos-duration="2000"
       className="w-full lg:w-[470px] flex flex-col justify-center rounded-2xl"
     >
-      <div className="mb-5">
-        <Logo />
+      <div className="mb-2 xl:mb-5 xl:-ml-3 flex">
+        <Logo className="px-0 xl:m-0" />
       </div>
       <div className="text-black dark:text-white mb-7">
         <h1 className="font-bold text-[32px] mb-5">Welcome Back!</h1>
@@ -28,12 +28,10 @@ const SignInForm = () => {
             <InputAnimate
               placeholderAnimation="Email"
               inputClassName="border border-white"
-              errorMessage="this is errror"
             />
             <InputAnimate
               placeholderAnimation="password"
               inputClassName="border border-white"
-              errorMessage="this is errror"
             />
             <ButtonLink
               href="/"
